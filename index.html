@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Text STROKE Animation</title>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+      body{
+      font-family: 'Kalam', cursive;
+      background: #f2f2f2;
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      margin: 0;
+      box-sizing: border-box;
+      }
+      h1{
+      font-size: 200px;
+      letter-spacing: 5px;
+      -webkit-text-stroke: transparent 20px;
+      text-transform: uppercase;
+      background: linear-gradient(90deg,#1a828a 50%,#222 50.1%);
+      background-size: 40px;
+      text-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color: #eee;
+      animation: text 1s linear infinite;
+      }
+      @keyframes text
+      {
+      0% {
+      background-position-x:0;
+      }
+      to {
+      background-position-x:40px;
+      }
+      }
+      @media(max-width: 900px){
+      h1{
+      font-size: 120px;
+      letter-spacing: 10px;
+      }
+      } 
+      @media(max-width: 500px){
+      h1{
+      font-size: 70px;
+      letter-spacing: 15px;
+      -webkit-text-stroke: transparent 12px;
+      }
+      }           
+    </style>
+  </head>
+  <body>
+    <h1>W3hubs</h1>
+  </body>
+</html>
